@@ -33,14 +33,12 @@ export default function Home() {
               Royal orchestration for coding agents
             </div>
             <h1 id="hero-heading">
-              Run your Empire
+              Run agent empires
               <br />
-              from a single chat&nbsp;thread.
+              from a single thread.
             </h1>
             <p className="hero-description">
-              Talk to the Queen. Her Secretary coordinates your 00-Agents
-              behind the scenes. Results and decisions come back to the throne
-              for you to review.
+              Once the Crown is at your service, you'll never look back.
             </p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/docs/quickstart/">
