@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+.netlify/
+.context/
+.env*
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+.playwright-cli/
