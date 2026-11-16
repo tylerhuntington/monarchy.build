@@ -35,11 +35,10 @@ export default function Home() {
             <h1 id="hero-heading">
               Run agent empires
               <br />
-              from a single thread
+              from a single thread.
             </h1>
             <p className="hero-description">
-              Let the Crown take the royal pain out of agent orchestration. You'll
-              never look back.
+              Let the Crown rule the masses.
             </p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/docs/quickstart/">
@@ -52,9 +51,6 @@ export default function Home() {
                 Explore the source <ArrowUpRight size={15} />
               </a>
             </div>
-            <p className="hero-note">
-              Your agents. Your project. One place to talk.
-            </p>
           </div>
         </section>
         <section
@@ -63,7 +59,7 @@ export default function Home() {
         >
           <div className="section-kicker">
             <span id="court-heading">
-              A little hierarchy. A lot less tab-hopping.
+              A little hierarchy = a lot less tab fatigue.
             </span>
             <span className="mono subtle">YOUR EMPIRE AT WORK</span>
           </div>
