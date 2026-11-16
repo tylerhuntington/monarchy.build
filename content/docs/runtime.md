@@ -1,4 +1,4 @@
-# Run the court
+# Run your empire
 
 The Secretary has a desk now: one private SQLite journal for assignments,
 reports, decisions and delivery receipts. Each command does one job and exits.
@@ -48,7 +48,7 @@ native identities are preserved when sending another assignment.
 
 Use actual native IDs and the profile the user selected. The 00 agent binding must
 match the task owner and repository. The Secretary may live in another workspace
-or repository. Give the 00 agent the court ID, task ID, assignment generation and
+or repository. Give the 00 agent the value of `court_id`, task ID, assignment generation and
 Secretary destination, plus the project's own rules and selected
 [skill package](skills.md). A reference to permission does not broaden it.
 
@@ -150,5 +150,5 @@ operation using its original native identity; it does not send it again.
 An unknown result stays unknown until readback proves otherwise. Do not delete
 it, replace its ID, or start a second 00 agent to make the warning go away. Session
 idle status alone proves neither completion nor that subprocesses have stopped.
-Keep one Secretary writer for a court. These cooperative records do not isolate
+Keep one Secretary writer per team. These cooperative records do not isolate
 hostile processes running as the same operating-system user.

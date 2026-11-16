@@ -4,7 +4,7 @@
 Importing it starts nothing. It creates no workspaces, hooks, services, or model
 defaults. It does not archive or cancel sessions.
 
-The caller owns the private operation journal, court membership, and authority
+The caller owns the private operation journal, team membership, and authority
 to act. The adapter checks native identities and delivery evidence. A confirmed
 message means Conductor accepted the matching message; it does not mean the
 agent ran it, understood it, or finished the task.
@@ -179,7 +179,7 @@ attempts. The adapter checks:
 
 - The native destination matches the recorded recipient session.
 - `content.senderSessionId` matches the envelope and active membership.
-- Court, task, and attempt match the sender's assignment.
+- The registered team, task, and attempt match the sender's assignment.
 - The sender's native session still belongs to its recorded workspace and repo.
 
 The result contains the envelope and native provenance with

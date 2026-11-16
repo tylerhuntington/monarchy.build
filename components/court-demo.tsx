@@ -44,7 +44,7 @@ const scenarios = [
     ],
     result:
       "Here’s the proposed flow. One choice needs your call: private favorites or shared lists?",
-    note: "You make the call once. The court carries your answer into the work.",
+    note: "You make the call once. The Secretary carries your answer into the work.",
     receipt: "A decision worth your time",
   },
   {
@@ -65,7 +65,7 @@ const scenarios = [
   },
 ] as const;
 
-/** An illustrative walkthrough of the court, not a live agent dashboard. */
+/** An illustrative walkthrough of the agents, not a live agent dashboard. */
 export function CourtDemo() {
   const [selected, setSelected] = useState(0);
   const id = useId();
@@ -94,7 +94,7 @@ export function CourtDemo() {
         <div
           className="court-demo-tabs"
           role="tablist"
-          aria-label="Explore a court workflow"
+          aria-label="Explore how your agents work"
         >
           {scenarios.map((item, index) => (
             <button

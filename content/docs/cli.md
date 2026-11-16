@@ -1,14 +1,14 @@
 # CLI reference
 
-Monarchy has two command-line entry points. The court runtime keeps the private
+Monarchy has two command-line entry points. The orchestration runtime keeps the private
 journal and explicitly delivers work. The observer reads session and PR status.
 Neither starts a background service.
 
 Run these commands from the cloned Monarchy repository, with Python 3.9 or later.
 Replace `/path/to/private/court.db` with a path outside the checkout. For a first
-assignment, follow [Run the court](/docs/runtime) before using this reference.
+assignment, follow [Run your empire](/docs/runtime) before using this reference.
 
-## Court runtime
+## Orchestration runtime
 
 The runtime requires `--state` before the subcommand:
 
@@ -111,9 +111,9 @@ passed review or authorize the next action.
 
 `check` validates the local watch list without network access. `status` reads
 the configured sessions and PRs once. `watch` polls for a change, saves its local
-observation state and exits on a change, an empty court or the deadline. Interval
-and timeout must be positive finite numbers. Court and state must be different
-files; only one watcher may own a state file at a time.
+observation state and exits on a change, an empty task list or the deadline. Interval
+and timeout must be positive finite numbers. The watch list and state must be
+different files; only one watcher may own a state file at a time.
 
 From the Monarchy checkout, validate the included empty example:
 
@@ -121,7 +121,7 @@ From the Monarchy checkout, validate the included empty example:
 python3 bin/monarchy.py check --court examples/court.json
 ```
 
-It returns `"valid": true` with zero tasks. For a configured court, take one
+It returns `"valid": true` with zero tasks. For a configured team, take one
 snapshot:
 
 ```sh
@@ -135,4 +135,4 @@ exit `2`.
 
 Live session reads need Conductor access. PR reads need an authenticated `gh`
 CLI. An idle session means its turn ended, not that the requested result passed.
-See [Watch the court](/docs/observer) for the watch-list schema and output fields.
+See [Watch your agents](/docs/observer) for the watch-list schema and output fields.

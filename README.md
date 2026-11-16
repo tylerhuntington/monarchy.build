@@ -16,7 +16,7 @@ npm run dev
 ```
 
 Open http://localhost:3000. The homepage includes an interactive example of the
-court at work; `/docs/` contains the guides and CLI reference.
+agents at work; `/docs/` contains the guides and CLI reference.
 
 ## Check a change
 

@@ -1,4 +1,4 @@
-# What the court has proved
+# What Monarchy has proved
 
 Monarchy's integration suite follows a request through the Secretary and back to
 the Queen. It uses the real SQLite record layer, the real Conductor adapter and
@@ -21,7 +21,7 @@ binding. From there it exercises:
 3. Ingest a 00 agent report from a different workspace using native sender identity.
 4. Let the Secretary handle routine progress quietly and save a decision for the
    Queen when the 00 agent needs a choice.
-5. Restart the court, reopen the same pending presentation, record the owner's
+5. Restart the runtime, reopen the same pending presentation, record the owner's
    answer and prepare its delivery as a separate obligation.
 6. Restart again, deliver the answer, ingest the 00 agent's completion report and
    check independent review evidence against the exact source revision.
@@ -53,9 +53,9 @@ assess the quality of a real code review.
 The process-death case uses a separate Python process and `os._exit` after the
 fixture persists native acceptance. It deliberately skips the clean database
 close and the adapter's final receipt. The native fixture keeps its own file so
-it survives independently of the court process.
+it survives independently of the runtime process.
 
-Duplicate report handling is an identity guarantee inside the court. It is not
+Duplicate report handling is an identity guarantee inside the runtime. It is not
 a claim of exactly-once execution across a network or inside an agent.
 
 ## Run it
@@ -126,7 +126,7 @@ instructions arrive intact, not that an agent will follow them.
 Finally, process restart is not machine-loss recovery. SQLite receipts depend
 on the underlying storage. Backup, restore to a new host, unattended scheduling,
 real project acceptance and authorization for external actions remain separate
-requirements. The court should know what it has proved before it takes the throne.
+requirements. Check what Monarchy has proved before entrusting it with more work.
 
 [wake]: https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/tests/fm-wake-queue.test.sh
 [outcomes]: https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/bin/fm-branch-outcome.sh

@@ -1,4 +1,4 @@
-# Run the Court in Conductor
+# Build your empire in Conductor
 
 Use one Monarchy cloud workspace for the Queen and Secretary, and one isolated
 project workspace per independent task. Sequential stages can share a task
@@ -16,7 +16,7 @@ that guide binds to. Cloning Monarchy creates none of them.
 
 The owner starts the Queen. Under that assignment, establish a Secretary session
 in the same Monarchy workspace with the selected profile, its role instructions,
-and the court's scope. Record both native session IDs in `.monarchy/leadership.md`
+and the team's scope. Record both native session IDs in `.monarchy/leadership.md`
 and have the Secretary verify its assignment.
 
 The current CLI can enable fast mode but cannot explicitly disable it. The
@@ -85,7 +85,7 @@ watch register. A fresh review session checks the exact current source.
 
 Put the report destination in the brief. Prefer the project's existing durable
 record for routine updates, subject to its publication rules. Agent-to-agent
-messages must stay within the authorized court and task scope. They carry facts
+messages must stay within the authorized team and task scope. They carry facts
 and instructions within existing authority, not new owner approvals.
 
 The runtime verifies structured reports against the native sender and current

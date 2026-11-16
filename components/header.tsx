@@ -31,7 +31,7 @@ export function Header() {
           </a>
         </nav>
         <Link className="header-cta" href="/docs/quickstart/">
-          Start a court <span aria-hidden="true">↗</span>
+          Build your empire <span aria-hidden="true">↗</span>
         </Link>
         <button
           className="mobile-menu-button icon-button"
@@ -53,7 +53,7 @@ export function Header() {
             Documentation
           </Link>
           <Link href="/docs/quickstart/" onClick={() => setOpen(false)}>
-            Start a court
+            Build your empire
           </Link>
           <a href="https://github.com/tylerhuntington/monarchy">GitHub ↗</a>
         </nav>

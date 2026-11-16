@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -15,36 +16,47 @@ export default function Home() {
   return (
     <>
       <main id="main">
-        <section className="hero page-width">
-          <div className="hero-eyebrow">
-            <span className="tiny-crown">
+        <section className="hero page-width" aria-labelledby="hero-heading">
+          <div className="hero-artwork">
+            <Image
+              src="/og.png"
+              width={1254}
+              height={1254}
+              alt="Keep calm and DM the Queen. A white crown and lettering on a red poster."
+              priority
+              className="hero-poster"
+            />
+          </div>
+          <div className="hero-copy">
+            <div className="hero-eyebrow">
               <Crown size={14} />
-            </span>{" "}
-            AN OPEN-SOURCE COURT FOR CODING AGENTS
+              Royal orchestration for coding agents
+            </div>
+            <h1 id="hero-heading">
+              Build an empire.
+              <br />
+              One conversation.
+            </h1>
+            <p className="hero-description">
+              Put an empire of coding agents at your command. Talk to the Queen.
+              Her Secretary handles the delegation and follow-ups. Results and
+              decisions come back to you in the same conversation.
+            </p>
+            <div className="hero-actions">
+              <Link className="button button-primary" href="/docs/quickstart/">
+                Build your empire <ArrowRight size={16} />
+              </Link>
+              <a
+                className="button button-secondary"
+                href="https://github.com/tylerhuntington/monarchy"
+              >
+                Explore the source <ArrowUpRight size={15} />
+              </a>
+            </div>
+            <p className="hero-note">
+              Your agents. Your project. One place to talk.
+            </p>
           </div>
-          <h1>
-            Keep calm.
-            <br /> <span className="hero-second">DM the Queen.</span>
-          </h1>
-          <p className="hero-description">
-            Rule an empire of coding agents through one conversation.
-            <br className="desktop-break" /> You set the direction. The court
-            takes care of the coordination.
-          </p>
-          <div className="hero-actions">
-            <Link className="button button-primary" href="/docs/quickstart/">
-              Start a court <ArrowRight size={16} />
-            </Link>
-            <a
-              className="button button-secondary"
-              href="https://github.com/tylerhuntington/monarchy"
-            >
-              Explore the source <ArrowUpRight size={15} />
-            </a>
-          </div>
-          <p className="hero-note">
-            Your agents. Your project. One place to talk.
-          </p>
         </section>
         <section
           className="court-section page-width"
@@ -54,7 +66,7 @@ export default function Home() {
             <span id="court-heading">
               A little hierarchy. A lot less tab-hopping.
             </span>
-            <span className="mono subtle">MEET THE ROYAL COURT</span>
+            <span className="mono subtle">YOUR EMPIRE AT WORK</span>
           </div>
           <CourtDemo />
         </section>
@@ -73,7 +85,7 @@ export default function Home() {
               to the Queen, so you can stop carrying messages between agents.
             </p>
             <Link href="/docs/how-it-works/">
-              Meet your court <ArrowRight size={14} />
+              Meet your agents <ArrowRight size={14} />
             </Link>
           </article>
           <article>
@@ -95,7 +107,7 @@ export default function Home() {
             <RotateCcw size={20} />
             <h2>
               New session.
-              <br /> Same kingdom.
+              <br /> Same empire.
             </h2>
             <p>
               Even Queens run out of context. A checked handoff carries the
@@ -108,7 +120,7 @@ export default function Home() {
         </section>
         <section className="under-hood page-width">
           <div className="under-hood-copy">
-            <span className="eyebrow">ORDER IN THE COURT</span>
+            <span className="eyebrow">KEEP YOUR EMPIRE IN ORDER</span>
             <h2>
               A crown is optional.
               <br /> A paper trail isn’t.
@@ -125,7 +137,7 @@ export default function Home() {
           <div className="journal-preview">
             <div className="terminal-title">
               <Terminal size={15} />
-              <span>THE COURT’S WORKING RECORD</span>
+              <span>YOUR EMPIRE’S WORKING RECORD</span>
               <span className="example-label">Example</span>
             </div>
             <div className="journal-row">
@@ -161,8 +173,8 @@ export default function Home() {
           <div>
             <span className="eyebrow">YOUR MOVE</span>
             <h2>
-              A royal pain,
-              <br /> meet a royal court.
+              Every empire
+              <br /> starts somewhere.
             </h2>
             <p>Start with one project and one task. Build from there.</p>
             <Link className="button button-primary" href="/docs/quickstart/">

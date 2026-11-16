@@ -8,7 +8,7 @@ export interface Doc {
   title: string;
   description: string;
   section: string;
-  kind: "imported" | "authored";
+  kind: "imported" | "adapted" | "authored";
   body: string;
   toc: DocHeading[];
   sourcePath: string;

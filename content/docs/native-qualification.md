@@ -1,4 +1,4 @@
-# The first live court run
+# The first live run
 
 The read-only pilot passed on November 16, 2026 (UTC). A real worker in a separate
 Conductor workspace received an assignment, sent progress and completion reports,
@@ -70,4 +70,4 @@ install a background service, or evaluate the 72 skill scenarios.
 
 The runtime remains opt-in. Native owner input, automatic prompt protection,
 additional profiles and unattended operation each need their own qualification.
-Reading one successful receipt should make the court's limits easier to see.
+Reading one successful receipt should make Monarchy's limits easier to see.

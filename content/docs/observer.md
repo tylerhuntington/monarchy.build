@@ -1,10 +1,10 @@
-# Watch the Court
+# Watch your agents
 
 The observer gives the Secretary a current view of registered task sessions and
 pull requests. It reads Conductor and GitHub, then prints JSON. It never launches
 agents, sends messages, changes a PR, or decides that a task is done.
 
-This observer is separate from [the court runtime](runtime.md). Its JSON watch
+This observer is separate from [the Monarchy runtime](runtime.md). Its JSON watch
 list and baseline do not replace the runtime's SQLite journal of assignments,
 decisions, and deliveries.
 
@@ -45,7 +45,7 @@ replace every example identifier below with a real value. Put this shape in
 }
 ```
 
-The court supports up to 100 tasks, each with its own repository. Task IDs and
+The watch list supports up to 100 tasks, each with its own repository. Task IDs and
 session IDs must be unique within the file. Set `pr` to a positive PR number when
 one exists. Keep every field; unknown fields are rejected to catch typos.
 `stage`, `brief`, and `endpoint` must contain text. The observer retains their
@@ -58,7 +58,7 @@ workspace belongs to `repo`; verify that binding when registering the task.
 
 ## Check once
 
-From the Monarchy checkout, validate the court without contacting either service:
+From the Monarchy checkout, validate the watch list without contacting either service:
 
 ```bash
 python3 bin/monarchy.py check --court .monarchy/court.json
@@ -102,7 +102,7 @@ status, PR head, PR state, error, or task registration changes. A changed task
 binding includes changes to its repository, session, stage, brief or endpoint.
 Changing the session can't inherit the previous session's unchanged baseline.
 
-The watch reloads the court every cycle. An empty court returns immediately.
+The watch reloads the task list every cycle. An empty list returns immediately.
 Otherwise, a quiet watch returns at its deadline. Persistent errors remain in
 the result without producing the same change event every cycle. Recovery
 produces a new change event.
@@ -115,7 +115,7 @@ snapshot.
 `watch` writes only the selected local state file and its adjacent `.lock` file,
 creating their parent directory if needed. State writes replace the file
 atomically. A lock prevents two watchers from using the same state at once.
-Use a separate state file for each court. Malformed or mismatched state produces
+Use a separate state file for each team. Malformed or mismatched state produces
 an error instead of silently starting over.
 
 The Secretary reads the result and chooses the next authorized action. The
@@ -139,7 +139,7 @@ or null), `pr` (state, merged flag, full head SHA, or null), and `errors`.
 An error never becomes a successful observation. Native session status strings
 are reported as supplied; unfamiliar states need inspection.
 
-Exit codes are `0` for a healthy result (including an empty court or timeout),
+Exit codes are `0` for a healthy result (including an empty task list or timeout),
 `1` for invalid input, state/file errors or degraded observations, `2` for command
 usage errors, and `130` for interruption. Successful commands and operational
 errors print JSON to standard output; usage errors use argparse's standard error

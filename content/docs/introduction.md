@@ -1,4 +1,4 @@
-# One conversation. A whole court.
+# One conversation. An entire empire.
 
 Monarchy lets you rule an empire of coding agents through one conversation.
 Talk to the Queen. Her Secretary divides the work, follows up with the 00 Agents
@@ -8,7 +8,7 @@ the throne for sign-off.
 You can still open the other sessions. You shouldn't have to carry messages
 between them.
 
-## Meet your court
+## Meet your team
 
 | Role | The job |
 | --- | --- |
@@ -47,13 +47,13 @@ Your project's review, delivery and permission rules stay in force.
 
 The bundled First Mate source is a pinned reference and compatibility fixture.
 It helped shape the single-conversation approach and the coordination contracts;
-it isn't the engine running this court.
+it isn't the engine behind Monarchy.
 
 ## Start with one assignment
 
-[Start a court](/docs/quickstart) with a small read-only investigation. Follow the
+[Build your empire](/docs/quickstart) with a small read-only investigation. Follow the
 result back to the Queen, then add build work and independent review.
 
-For the machinery, read [Run the court](/docs/runtime) and the
+For the machinery, read [Run your empire](/docs/runtime) and the
 [CLI reference](/docs/cli). Keep the [current limits](/docs/limits) close by as
 you decide how much to delegate.
