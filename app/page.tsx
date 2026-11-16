@@ -43,7 +43,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/docs/quickstart/">
-                Build your empire <ArrowRight size={16} />
+                Get started <ArrowRight size={16} />
               </Link>
               <a
                 className="button button-secondary"
