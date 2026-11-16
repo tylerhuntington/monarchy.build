@@ -33,12 +33,13 @@ export default function Home() {
               Royal orchestration for coding agents
             </div>
             <h1 id="hero-heading">
-              Rule agent empires
+              Run agent empires
               <br />
               from a single thread
             </h1>
             <p className="hero-description">
-              Once the Crown is at your service, you'll never look back.
+              Let the Crown take the royal pain out of agent orchestration. You'll
+              never look back.
             </p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/docs/quickstart/">
