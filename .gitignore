@@ -2,6 +2,8 @@ node_modules/
 .next/
 out/
 .netlify/
+.wrangler/
+.dev.vars*
 .context/
 .env*
 playwright-report/
