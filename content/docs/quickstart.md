@@ -2,7 +2,7 @@
 
 Start with one conversation and one task. Set up the Queen in Conductor cloud,
 then ask for a read-only investigation. The result should come back to her
-without you coordinating the 00 Agents.
+without you coordinating the 00-Agents.
 
 You need Python 3.9 or later on macOS or Linux, plus Bash and jq for the upstream
 compatibility test. Live work also needs the Conductor CLI with access to your
@@ -47,7 +47,7 @@ an approved durable location before the machine goes away.
 The runtime's canonical task state is a private SQLite database outside the
 checkout. `.monarchy/court.json` is only the observer's watch list; it does not
 replace the journal. Follow [the runtime setup](runtime.md) to register the
-existing 00 Agent and Secretary sessions before sending a task. Setup starts no
+existing 00-Agent and Secretary sessions before sending a task. Setup starts no
 watcher, agent, or service.
 
 Start your chosen agent in that workspace and give it this instruction:
@@ -71,7 +71,7 @@ Give the Queen an outcome such as:
 > with file references. Do not change files or publish anything.
 
 The Queen records the brief and endpoint. The Secretary selects the
-[skills and project instructions](skills.md) the 00 Agent needs, registers its
+[skills and project instructions](skills.md) the 00-Agent needs, registers its
 native binding, then prepares and explicitly delivers the assignment through
 [the runtime](runtime.md). Start with an existing session whose observed profile
 matches the requested one; the current CLI cannot explicitly disable fast mode
@@ -87,7 +87,7 @@ observer does not.
 Ask the Queen how the task is going. She should give you a concise status and any
 choice that needs your input. The Secretary handles routine questions and follow-ups.
 
-When the 00 Agent finishes, the Secretary ingests its native report and checks the
+When the 00-Agent finishes, the Secretary ingests its native report and checks the
 file references. Independent review ties the result to the exact source revision
 before it reaches the Queen's results inbox. The Queen returns the explanation
 and evidence in your conversation. Check that it answers the original request.

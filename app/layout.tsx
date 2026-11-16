@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/" },
   description:
-    "Build an empire of coding agents through one conversation. Monarchy gives you a Queen, a Secretary, and a team of 00 Agents.",
+    "Build an empire of coding agents through one conversation. Talk to the Queen while her Secretary coordinates your 00-Agents.",
   openGraph: {
     type: "website",
     siteName: "Monarchy",

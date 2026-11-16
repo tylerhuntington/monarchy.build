@@ -61,7 +61,7 @@ const scenarios = [
     result:
       "The handoff is checked and the successor has accepted ownership. Your open decisions are still open.",
     note: "A supervised handoff keeps ownership clear. It doesn’t grant new authority.",
-    receipt: "Context + accountable ownership",
+    receipt: "Handoff checked · ownership accepted",
   },
 ] as const;
 
@@ -170,7 +170,7 @@ export function CourtDemo() {
             <span />
             <span />
           </div>
-          <ul className="court-demo-agents" aria-label="Specialist 00 Agents">
+          <ul className="court-demo-agents" aria-label="Specialist 00-Agents">
             {scenario.agents.map((agent, index) => (
               <li key={agent.name}>
                 <span className="court-demo-agent-icon" aria-hidden="true">

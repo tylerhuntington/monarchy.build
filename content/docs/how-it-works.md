@@ -1,7 +1,7 @@
-# Meet your team
+# Meet the Royalty
 
 You follow one conversation with the Queen. Behind it, the Secretary coordinates
-the agents working on your request. The Queen brings back results, questions that
+the 00-Agents working on your request. The Queen brings back results, questions that
 need your judgment, and blockers the team cannot resolve within your instructions.
 
 ## Your conversation with the Queen
@@ -10,7 +10,7 @@ Start with the outcome you want. Ask for progress in the same thread. Change
 priorities there too. The Queen keeps the overall request in view and delegates
 the work through the Secretary.
 
-You shouldn't need to find the right 00 Agent, forward a review, or explain the
+You shouldn't need to find the right 00-Agent, forward a review, or explain the
 same decision in several tabs. The Queen is responsible for carrying your
 direction to the team and bringing the result back. Other sessions remain
 available when you want to inspect the detail.
@@ -24,7 +24,7 @@ A choice comes back when it needs your judgment or authority. For example, a fix
 may require changing behavior outside the agreed scope, or work may need access
 you haven't granted. The Queen explains the situation, presents the tradeoff,
 recommends a path, and says what is waiting on your answer. She passes that answer
-back through the Secretary; you don't have to repeat it to each 00 Agent.
+back through the Secretary; you don't have to repeat it to each 00-Agent.
 
 An update should tell you what changed and what it means. A final result should
 say what was completed, what was checked, and what remains open. Evidence stays
@@ -39,13 +39,11 @@ outcome. She delegates project code changes and their review.
 **The Secretary** runs routine coordination. It tracks assignments, follows up
 on blockers, arranges independent reviews, and manages handoffs. It sends the
 Queen important decisions and outcomes, rather than forwarding every status event.
+It keeps the task records current so the next session can pick up the work.
 
-The Secretary keeps the task records current and brings decisions to the Queen
-when they need the user's attention.
-
-**00 Agents** build, investigate, and review in isolated task workspaces. Each gets
+**00-Agents** build, investigate, and review in isolated task workspaces. Each gets
 a brief and a completion condition. They report through the Secretary instead
-of asking you to coordinate with the next agent.
+of asking you to coordinate with the next 00-Agent.
 
 ## Follow one request
 
@@ -53,7 +51,7 @@ Suppose you ask the Queen to fix a broken CSV export and prepare a PR.
 
 1. You describe the problem and the result you want in the Queen's thread.
 2. Behind the scenes, the Secretary assigns the fix and arranges checks and a
-   fresh review. 00 Agents resolve routine questions within the brief.
+   fresh review. 00-Agents resolve routine questions within the brief.
 3. If a decision exceeds that brief, the Queen brings it back with context and a
    recommendation. You answer in her thread.
 4. The team carries on within that answer's scope. The Queen returns the

@@ -35,7 +35,7 @@ In the Monarchy workspace, prepare `.monarchy/task.md` from
 project references. A task workspace cannot assume access to the Monarchy
 checkout or the Queen's conversation.
 
-Name each new task session `00-<descriptor>`, with two numeric zeros and a short
+Name each new 00-Agent session `00-<descriptor>`, with two numeric zeros and a short
 job description: `00-tests`, `00-docs`, or `00-build-fix`. The name is a label;
 keep using the recorded native ID to address the session.
 

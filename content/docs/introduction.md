@@ -1,20 +1,20 @@
 # One conversation. An entire empire.
 
 Monarchy lets you rule an empire of coding agents through one conversation.
-Talk to the Queen. Her Secretary divides the work, follows up with the 00 Agents
+Talk to the Queen. Her Secretary divides the work, follows up with the 00-Agents
 and arranges reviews. Results and decisions that need your input come back to
-the throne for sign-off.
+the throne for you to review.
 
 You can still open the other sessions. You shouldn't have to carry messages
 between them.
 
-## Meet your team
+## Meet the Royalty
 
 | Role | The job |
 | --- | --- |
 | Queen | Your point of contact. Keeps the goal in view and brings back results and decisions. |
 | Secretary | Runs the coordination: assignments, progress, reviews and handoffs. |
-| 00 Agents | Build, investigate and review, each with a brief and a separate task workspace. |
+| 00-Agents | Build, investigate and review, each with a brief and a separate task workspace. |
 
 Names tell you what an agent does: `00-tests`, `00-docs`, `00-build-fix`.
 The two zeros are a small nod to the

@@ -6,11 +6,11 @@
     {
       "slug": "introduction",
       "title": "Welcome to Monarchy",
-      "description": "Keep calm. DM the Queen.",
+      "description": "Keep calm and DM the Queen.",
       "section": "Start here",
       "kind": "authored",
       "sourcePath": "README.md",
-      "sha256": "328c734de1ff622202783d4acc50c3bf33936b4cafcf1c8ab0f54edc697ce199",
+      "sha256": "b16617025f89ac01772ca46a424febbe14e716e839e51185e5380f15c3009e77",
       "sourceSha256": "18855066d7dafa0a4dfd9d827445db16a725396533286a48ca8d03b76ff78f00",
       "derivedFrom": [
         {
@@ -38,7 +38,7 @@
       "section": "Start here",
       "kind": "adapted",
       "sourcePath": "docs/quickstart.md",
-      "sha256": "e897ae77b5a070bb47c94dd073f42271132e9786b6c47a7f6ff088d16936a52b",
+      "sha256": "6e5fe2e43e4e5fb668d9ef914cf3ffdf4124e4803ce33631507ef458da0748b6",
       "sourceSha256": "11b42e1b70160699c8fca96376ddb9badf424d85857a304714340e969f5a916a",
       "derivedFrom": [
         {
@@ -49,12 +49,12 @@
     },
     {
       "slug": "how-it-works",
-      "title": "Meet your team",
-      "description": "One conversation for you. Clear assignments for everyone behind it.",
+      "title": "Meet the Royalty",
+      "description": "The Queen, her Secretary and your 00-Agents. One conversation keeps them together.",
       "section": "Start here",
       "kind": "adapted",
       "sourcePath": "docs/how-it-works.md",
-      "sha256": "d036a16ed70a8284f324064ec5d3ebc32c8505d1208c7b65cc562c07f6d6e35c",
+      "sha256": "c7ee0bee02c4744a5852fe9c8304b71956dbde4f169f9bad8968174ed0373b27",
       "sourceSha256": "62584cd57d9f85800f78915069aa3593b0ae0fdda22bf7d4b26d0ddf9931b15f",
       "derivedFrom": [
         {
@@ -68,10 +68,16 @@
       "title": "Pass the crown",
       "description": "Keep the request, decisions and unfinished work together when a session changes.",
       "section": "Start here",
-      "kind": "imported",
+      "kind": "adapted",
       "sourcePath": "docs/succession.md",
-      "sha256": "9a599fe8970e73cde9de5fda35aebdf3fd36c4f4fd5d9def984dc9f1f0b3e850",
-      "sourceSha256": "9a599fe8970e73cde9de5fda35aebdf3fd36c4f4fd5d9def984dc9f1f0b3e850"
+      "sha256": "a9a9ddb11049c485cd5cbfea2e5fd6a78830e5a13fcf17a23c6c47edb998c8bc",
+      "sourceSha256": "9a599fe8970e73cde9de5fda35aebdf3fd36c4f4fd5d9def984dc9f1f0b3e850",
+      "derivedFrom": [
+        {
+          "path": "docs/succession.md",
+          "sha256": "9a599fe8970e73cde9de5fda35aebdf3fd36c4f4fd5d9def984dc9f1f0b3e850"
+        }
+      ]
     },
     {
       "slug": "runtime",
@@ -80,7 +86,7 @@
       "section": "Run your empire",
       "kind": "adapted",
       "sourcePath": "docs/runtime.md",
-      "sha256": "d280a0dba9ee7687f075cd06f24f58242e3bdd9d14a837ab36dc3a0f8cb7c443",
+      "sha256": "58202da178c70c582f502f983e8bf33166cd5600e36add01499e49da288f9c61",
       "sourceSha256": "e767fc88b090be2e6aa80d8a1e2b93920c69d0cd79f41dd0bf8ddcf3ec716601",
       "derivedFrom": [
         {
@@ -96,7 +102,7 @@
       "section": "Run your empire",
       "kind": "adapted",
       "sourcePath": "docs/skills.md",
-      "sha256": "71b1091724244d20585b14c193c10b846458e9c4b9f4cd6443332d47b7df3d87",
+      "sha256": "6c81bacd82752e7195f00e24244c176eb4b4a84438e0412b2ac9ced76f0096a4",
       "sourceSha256": "7efdbf94152115106109ea5f4e5eaaedfe61ef87083b64bbde1ec0d7c7437965",
       "derivedFrom": [
         {
@@ -108,11 +114,11 @@
     {
       "slug": "conductor",
       "title": "Conductor setup",
-      "description": "Arrange the Queen, Secretary and task sessions in Conductor cloud.",
+      "description": "Set up the Queen, her Secretary and your 00-Agents in Conductor cloud.",
       "section": "Run your empire",
       "kind": "adapted",
       "sourcePath": "docs/conductor.md",
-      "sha256": "c2085095e8f49eb8fda2e22b22cedd8222c3404d841681fcd216ee62a040d339",
+      "sha256": "606f43961dc1446ede7da8b8eb412d011dca6e5cd457732c659ac7008c2e190b",
       "sourceSha256": "9f14529dace44e8d9d8326e956f0b963cf1f17395bb7c349c8db97b84a4f74b7",
       "derivedFrom": [
         {
@@ -128,7 +134,7 @@
       "section": "Run your empire",
       "kind": "adapted",
       "sourcePath": "docs/observer.md",
-      "sha256": "2080ee8dc8f62c9bc85aec350acc8e039ffd0c04591c4ea571c3a70ae4d5bfca",
+      "sha256": "eedcbc20e8a3818fb0cc540f774e41b9a0bcd929d0ee6e663a70239d8b62c25f",
       "sourceSha256": "023dae669362211b5cf84f7c1122ca8469263d3ad4cb04ff2b015cacb1d01d6d",
       "derivedFrom": [
         {
@@ -172,7 +178,7 @@
       "section": "Reference",
       "kind": "adapted",
       "sourcePath": "docs/runtime-records.md",
-      "sha256": "84355b495e2c84a80e57347c81d76072123467a9edc4448a24b741bf132ddab3",
+      "sha256": "6c61aa094f15ea1a309af46ec11c8f1ca64ba97ecbb728f96781c36b9e8c2026",
       "sourceSha256": "73910eb2371d54e88f0c212c3caac98e7677460d9a696e96c9cbe8ded3556e04",
       "derivedFrom": [
         {
@@ -188,7 +194,7 @@
       "section": "Reference",
       "kind": "adapted",
       "sourcePath": "docs/conductor-transport.md",
-      "sha256": "0b96d13b15fbfb857a84817a6aaab107cb34ea3d6016021bf1d9dd79ed38d8c5",
+      "sha256": "b9e4bc3ccd0d6832bbe6a40676f9bff70211907dd434decdf331638d38ce08e8",
       "sourceSha256": "b18cbc1913e19c29c2a9a7b23a25732524bee86816d6d6369d0463d69203aa75",
       "derivedFrom": [
         {
@@ -204,7 +210,7 @@
       "section": "Verification",
       "kind": "adapted",
       "sourcePath": "docs/qualification.md",
-      "sha256": "fa447b89221a9f126b0949c09dd75c7c1fb093167e6310ac2a9ce2a8e078a607",
+      "sha256": "a083ecac6d7cc31664da9ace6ddad3bf7df6ec6d54a309e7c68d2c93475b0d24",
       "sourceSha256": "9090a34a2e8b8d9c2eaada167b1e3f78fc41ab45b57ab2a64751afe9bb745162",
       "derivedFrom": [
         {
@@ -220,7 +226,7 @@
       "section": "Verification",
       "kind": "adapted",
       "sourcePath": "docs/native-qualification.md",
-      "sha256": "811bfcc86699ac63cea16ed516d7a2cee87c687e9fd7b701f0df221df9441f56",
+      "sha256": "1eee05da42a1e524510ccd653141542f5efe6187065af0aafa9ae4aaa99cad82",
       "sourceSha256": "5e3855af2ec04da45260d83e7d57f3539b8dceee4e13c57b3ac3703e34956b25",
       "derivedFrom": [
         {
@@ -236,7 +242,7 @@
       "section": "Verification",
       "kind": "adapted",
       "sourcePath": "docs/limits.md",
-      "sha256": "4c7d0391c8cc49f5ca695137e855f94dc4e61de39785cd300b558b86c1760feb",
+      "sha256": "8848bdc6a52e14b57a95d6c371d04fc40ec211c4892c2bbd73ed9483b0aebb9b",
       "sourceSha256": "94478d090116809fe44fd7615cffc4d97efd4bc7f3b16fc3e7bc7c493dda4e2b",
       "derivedFrom": [
         {

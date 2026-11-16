@@ -38,9 +38,9 @@ export default function Home() {
               One conversation.
             </h1>
             <p className="hero-description">
-              Put an empire of coding agents at your command. Talk to the Queen.
-              Her Secretary handles the delegation and follow-ups. Results and
-              decisions come back to you in the same conversation.
+              Talk to the Queen. Her Secretary coordinates your 00-Agents
+              behind the scenes. Results and decisions come back to the throne
+              for you to review.
             </p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/docs/quickstart/">
@@ -85,7 +85,7 @@ export default function Home() {
               to the Queen, so you can stop carrying messages between agents.
             </p>
             <Link href="/docs/how-it-works/">
-              Meet your agents <ArrowRight size={14} />
+              Meet the Royalty <ArrowRight size={14} />
             </Link>
           </article>
           <article>
@@ -96,8 +96,8 @@ export default function Home() {
             </h2>
             <p>
               The Secretary handles assignments, follow-ups, and reviews.
-              Results and decisions that need you come back to the throne for
-              sign-off.
+              Your 00-Agents do the work. You make the calls that need your
+              judgment.
             </p>
             <Link href="/docs/skills/">
               See the skills <ArrowRight size={14} />
@@ -160,7 +160,7 @@ export default function Home() {
               <span className="journal-symbol">✓</span>
               <div>
                 <strong>Outcome</strong>
-                <span>Checked result, with source evidence</span>
+                <span>What changed, what passed, and the proof</span>
               </div>
               <span className="journal-tag">verified</span>
             </div>

@@ -46,9 +46,9 @@ For a new task session, `metadata.agent_name` supplies its readable descriptor.
 prefix. Omit it to derive the name from the task ID. Existing session names and
 native identities are preserved when sending another assignment.
 
-Use actual native IDs and the profile the user selected. The 00 agent binding must
+Use actual native IDs and the profile the user selected. The 00-Agent binding must
 match the task owner and repository. The Secretary may live in another workspace
-or repository. Give the 00 agent the value of `court_id`, task ID, assignment generation and
+or repository. Give the 00-Agent the value of `court_id`, task ID, assignment generation and
 Secretary destination, plus the project's own rules and selected
 [skill package](skills.md). A reference to permission does not broaden it.
 
@@ -69,7 +69,7 @@ to repeat.
 
 ## Keep the chatter off the throne
 
-00 Agents send the [native report envelope](conductor-transport.md) to the Secretary.
+00-Agents send the [native report envelope](conductor-transport.md) to the Secretary.
 The Secretary ingests its native event ID, then takes one bounded pass:
 
 ```sh
@@ -97,7 +97,7 @@ Queen's conversation. A host that adds notifications must hold them while the
 owner has an open prompt, or while prompt state is unknown. The current native
 CLI does not prove that prompt state.
 
-## Take an answer back to the 00 agent
+## Take an answer back to the 00-Agent
 
 The Queen obtains your answer through the host's trusted owner conversation.
 She records a JSON answer and that message's reference:
@@ -111,15 +111,15 @@ python3 -m monarchy --state /path/to/private/court.db deliver OPERATION_ID
 `answer.json` is an object, for example `{"text": "Keep the original scope."}`.
 The journal retains it; it does not authenticate a person. A native message with
 no sender metadata is not proof that the user approved anything. Never turn a
-00 agent's claimed permission into an answer.
+00-Agent's claimed permission into an answer.
 
-An answer is tied to the decision revision and 00 agent generation. After a handoff,
+An answer is tied to the decision revision and 00-Agent generation. After a handoff,
 the Secretary must reconcile the old obligation explicitly. It cannot quietly
-send the old answer to a replacement 00 agent.
+send the old answer to a replacement 00-Agent.
 
 ## Check the work before calling it done
 
-A 00 agent's completion report needs a full source revision. An independent
+A 00-Agent's completion report needs a full source revision. An independent
 reviewer checks that exact revision, reads the current revision back from the
 repository, and supplies an evidence file:
 
@@ -136,7 +136,7 @@ repository, and supplies an evidence file:
 python3 -m monarchy --state /path/to/private/court.db verify investigate-tests /path/to/private/review.json
 ```
 
-Verification refuses a stale source, a review by the assigned 00 agent, unanswered
+Verification refuses a stale source, a review by the assigned 00-Agent, unanswered
 decisions, undigested reports, or unfinished delivery. Accepted evidence creates
 a result in the Queen inbox. These checks validate the record contract; the
 reviewer still has to run the checks and supply honest evidence.
@@ -148,7 +148,7 @@ Use the same database after a restart. `tick` resumes an unfinished event claim.
 operation using its original native identity; it does not send it again.
 
 An unknown result stays unknown until readback proves otherwise. Do not delete
-it, replace its ID, or start a second 00 agent to make the warning go away. Session
+it, replace its ID, or start a second 00-Agent to make the warning go away. Session
 idle status alone proves neither completion nor that subprocesses have stopped.
 Keep one Secretary writer per team. These cooperative records do not isolate
 hostile processes running as the same operating-system user.
