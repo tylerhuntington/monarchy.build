@@ -47,18 +47,18 @@ written against. See [the content guide](content/README.md) to update them.
 
 ## Deploy to Cloudflare
 
-Cloudflare Workers Static Assets is the target host. Netlify continues serving
-`monarchy.build` until the domain cutover is verified. See [the migration steps](docs/hosting.md).
+Cloudflare Workers Static Assets hosts [monarchy.build](https://monarchy.build).
+The [hosting guide](docs/hosting.md) covers publishing, domain setup and recovery.
 
 `wrangler.jsonc` serves the static export in `out/`. There is no server, database,
 or function to run. Local fonts ship with the build. Cloudflare serves static
 assets without request charges; [OpenNext](https://opennext.js.org/cloudflare)
 is an option if the site later needs server features.
 
-The GitHub workflow checks each change. Once Cloudflare credentials are configured,
-pushes to `main` deploy the exact build that passed those checks. For a manual
-deployment, sign in with `npx wrangler login`, then run `npm run deploy`.
+The GitHub workflow checks each change. Pushes to `main` deploy the exact build
+that passed those checks to Cloudflare. For a manual deployment, follow the
+[hosting guide](docs/hosting.md) so the deployed version records its source.
 
 `monarchy.build` is the canonical domain. Spaceship remains the registrar;
-Cloudflare will manage DNS after cutover. Keep credentials outside this repository,
+Cloudflare manages DNS. Keep credentials outside this repository,
 and preserve unrelated DNS records.

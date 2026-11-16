@@ -59,6 +59,7 @@ function security(response, path) {
     "referrer-policy": "strict-origin-when-cross-origin",
     "x-frame-options": "DENY",
     "permissions-policy": "camera=(), microphone=(), geolocation=()",
+    "strict-transport-security": "max-age=31536000",
   })) assert.equal(response.headers.get(name), value, `${path}: ${name}`);
 }
 
