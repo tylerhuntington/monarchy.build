@@ -38,7 +38,7 @@ export default function Home() {
               from a single thread.
             </h1>
             <p className="hero-description">
-              Let the Crown rule the masses.
+              Let the crown rule the masses, so you can rule the vibes.
             </p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/docs/quickstart/">
@@ -59,7 +59,7 @@ export default function Home() {
         >
           <div className="section-kicker">
             <span id="court-heading">
-              A little hierarchy = a lot less tab fatigue.
+              A little hierarchy. A lot less tab fatigue.
             </span>
             <span className="mono subtle">YOUR EMPIRE AT WORK</span>
           </div>
