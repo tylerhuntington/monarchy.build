@@ -33,7 +33,7 @@ export default function Home() {
               Royal orchestration for coding agents
             </div>
             <h1 id="hero-heading">
-              Run agent empires
+              Run your agent empire
               <br />
               from a single thread.
             </h1>
