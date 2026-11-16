@@ -17,6 +17,10 @@ Check mobile, keyboard navigation and reduced motion for interface changes.
 No credentials, raw transcripts or private project data belong here. Do not contact
 or assign people without explicit user authorization.
 
-Production hosting is Netlify. Inspect existing DNS before changing website records;
-preserve unrelated mail and verification records. Domain ownership does not supply
+Cloudflare Workers Static Assets is the target host; Netlify remains live until
+the migration is verified. Keep Next.js static export and use the pinned Wrangler
+CLI. OpenNext is only needed if server features are introduced. Run
+`npm run check:hosting` after the build when changing hosting configuration.
+Inspect existing DNS before changing nameservers or website records; preserve
+unrelated mail and verification records. Domain ownership does not supply
 registrar access. Report actual deployment and DNS evidence separately.

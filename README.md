@@ -2,8 +2,8 @@
 
 Keep calm and DM the Queen.
 
-Monarchy’s public website and reference docs, built with Next.js and hosted on
-Netlify. The [Monarchy toolkit](https://github.com/tylerhuntington/monarchy) lives
+Monarchy’s public website and reference docs, built with Next.js.
+The [Monarchy toolkit](https://github.com/tylerhuntington/monarchy) lives
 in its own repository. This one owns the site.
 
 ## Run it locally
@@ -27,9 +27,12 @@ From this repository:
 npm test
 npm run build
 npm run typecheck
+npm run check:hosting
 ```
 
-The build writes a static site to `out/`. Check it with any static HTTP server.
+The build writes a static site to `out/`. `check:hosting` starts Cloudflare's local
+runtime and checks page routes, redirects, missing pages, headers, and assets.
+Use `npm run preview` to browse that runtime yourself at http://localhost:8787.
 Documentation tests verify source hashes, navigation, and links. Before publishing
 UI changes, also check narrow screens, keyboard navigation, search, code copying,
 and reduced motion in a real browser. CI runs the same source checks and build;
@@ -42,17 +45,20 @@ Guides are checked into `content/docs/`, with their toolkit revision and hashes 
 The website’s introduction and CLI reference cite the toolkit sources they were
 written against. See [the content guide](content/README.md) to update them.
 
-## Deploy to Netlify
+## Deploy to Cloudflare
 
-`netlify.toml` sets the build command to `npm run build` and the publish directory
-to `out`. This site uses static export: no server, database, functions, or runtime
-secrets. Local fonts ship with the build.
+Cloudflare Workers Static Assets is the target host. Netlify continues serving
+`monarchy.build` until the domain cutover is verified. See [the migration steps](docs/hosting.md).
 
-The `monarchy-build` Netlify project builds and publishes pushes to `main`.
-Run the checks above and review the PR before merging. After the merge, confirm
-that Netlify's published deploy points to the merged commit, then check the live
-homepage and docs.
+`wrangler.jsonc` serves the static export in `out/`. There is no server, database,
+or function to run. Local fonts ship with the build. Cloudflare serves static
+assets without request charges; [OpenNext](https://opennext.js.org/cloudflare)
+is an option if the site later needs server features.
 
-`monarchy.build` is the canonical domain. Keep domain credentials outside this
-repository. DNS remains at Spaceship; change only the website’s records and
-preserve mail, verification, and other unrelated records.
+The GitHub workflow checks each change. Once Cloudflare credentials are configured,
+pushes to `main` deploy the exact build that passed those checks. For a manual
+deployment, sign in with `npx wrangler login`, then run `npm run deploy`.
+
+`monarchy.build` is the canonical domain. Spaceship remains the registrar;
+Cloudflare will manage DNS after cutover. Keep credentials outside this repository,
+and preserve unrelated DNS records.
