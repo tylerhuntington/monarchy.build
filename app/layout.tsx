@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/" },
   description:
-    "Rule an empire of coding agents through one conversation. Monarchy gives you a Queen, a Secretary, and a court of 00 Agents.",
+    "Build an empire of coding agents through one conversation. Talk to the Queen while her Secretary coordinates your 00-Agents.",
   openGraph: {
     type: "website",
     siteName: "Monarchy",
     title: "Keep calm and DM the Queen.",
-    description: "One conversation. An entire court of coding agents.",
-    images: [{ url: "/og.png", width: 1200, height: 630 }],
+    description: "One conversation. An empire of coding agents.",
+    images: [{ url: "/og.png", width: 1254, height: 1254 }],
   },
-  twitter: { card: "summary_large_image", images: ["/og.png"] },
+  twitter: { card: "summary", images: ["/og.png"] },
 };
 export const viewport: Viewport = { themeColor: "#fafafa" };
 export default function RootLayout({

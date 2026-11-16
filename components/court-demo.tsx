@@ -44,7 +44,7 @@ const scenarios = [
     ],
     result:
       "Here’s the proposed flow. One choice needs your call: private favorites or shared lists?",
-    note: "You make the call once. The court carries your answer into the work.",
+    note: "You make the call once. The Secretary carries your answer into the work.",
     receipt: "A decision worth your time",
   },
   {
@@ -61,11 +61,11 @@ const scenarios = [
     result:
       "The handoff is checked and the successor has accepted ownership. Your open decisions are still open.",
     note: "A supervised handoff keeps ownership clear. It doesn’t grant new authority.",
-    receipt: "Context + accountable ownership",
+    receipt: "Handoff checked · ownership accepted",
   },
 ] as const;
 
-/** An illustrative walkthrough of the court, not a live agent dashboard. */
+/** An illustrative walkthrough of the agents, not a live agent dashboard. */
 export function CourtDemo() {
   const [selected, setSelected] = useState(0);
   const id = useId();
@@ -94,7 +94,7 @@ export function CourtDemo() {
         <div
           className="court-demo-tabs"
           role="tablist"
-          aria-label="Explore a court workflow"
+          aria-label="Explore how your agents work"
         >
           {scenarios.map((item, index) => (
             <button
@@ -170,7 +170,7 @@ export function CourtDemo() {
             <span />
             <span />
           </div>
-          <ul className="court-demo-agents" aria-label="Specialist 00 Agents">
+          <ul className="court-demo-agents" aria-label="Specialist 00-Agents">
             {scenario.agents.map((agent, index) => (
               <li key={agent.name}>
                 <span className="court-demo-agent-icon" aria-hidden="true">

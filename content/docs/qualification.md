@@ -1,4 +1,4 @@
-# What the court has proved
+# What Monarchy has proved
 
 Monarchy's integration suite follows a request through the Secretary and back to
 the Queen. It uses the real SQLite record layer, the real Conductor adapter and
@@ -13,17 +13,17 @@ Its receipt records the narrower guarantees observed on the actual host.
 ## The roundtrip
 
 [`tests/test_qualification.py`](../tests/test_qualification.py) registers the
-owner's request with a task, brief, authority reference and existing 00 agent
+owner's request with a task, brief, authority reference and existing 00-Agent
 binding. From there it exercises:
 
 1. Prepare a dispatch without sending it, then deliver it through the adapter.
 2. Read the matching native message back and retain its original identifiers.
-3. Ingest a 00 agent report from a different workspace using native sender identity.
+3. Ingest a 00-Agent report from a different workspace using native sender identity.
 4. Let the Secretary handle routine progress quietly and save a decision for the
-   Queen when the 00 agent needs a choice.
-5. Restart the court, reopen the same pending presentation, record the owner's
+   Queen when the 00-Agent needs a choice.
+5. Restart the runtime, reopen the same pending presentation, record the owner's
    answer and prepare its delivery as a separate obligation.
-6. Restart again, deliver the answer, ingest the 00 agent's completion report and
+6. Restart again, deliver the answer, ingest the 00-Agent's completion report and
    check independent review evidence against the exact source revision.
 7. Restart once more and find the verified result in the Queen's inbox. Reading
    it leaves it pending; explicit processing clears that presentation.
@@ -43,19 +43,19 @@ assess the quality of a real code review.
 | The same native report arrives again | Its immutable report identity produces one stored event, decision and outcome |
 | Triage saves an outcome and fails before acknowledging its event | The next pass resumes the claim and reuses the saved outcome |
 | A review belongs to an older source revision | Verification refuses it, even when another completion report exists |
-| A 00 agent says done while an owner question is unanswered | Completion and presentation acknowledgment leave the decision pending |
+| A 00-Agent says done while an owner question is unanswered | Completion and presentation acknowledgment leave the decision pending |
 | An answer is recorded but has no delivery operation yet | Verification remains blocked until the answer has been delivered |
 | An answered question is revised before its prepared message is sent | The old answer cannot be sent as current authority |
 | A question changes during native preflight | The record layer refuses send admission before the native write |
 | A report comes from a retired assignment | Native validation rejects it before it enters the current inbox |
-| A 00 agent receives a skill archive without the source checkout | Selected skills, references and exact project policy files remain readable and hash-verifiable |
+| A 00-Agent receives a skill archive without the source checkout | Selected skills, references and exact project policy files remain readable and hash-verifiable |
 
 The process-death case uses a separate Python process and `os._exit` after the
 fixture persists native acceptance. It deliberately skips the clean database
 close and the adapter's final receipt. The native fixture keeps its own file so
-it survives independently of the court process.
+it survives independently of the runtime process.
 
-Duplicate report handling is an identity guarantee inside the court. It is not
+Duplicate report handling is an identity guarantee inside the runtime. It is not
 a claim of exactly-once execution across a network or inside an agent.
 
 ## Run it
@@ -91,9 +91,9 @@ implementation:
 | [Actor-scoped wake claims and acknowledgment][wake] | Save the outcome before consuming the claimed event; replay after a crash preserves the obligation |
 | [Separate presentation and processing][outcomes] | Opening the Queen inbox does not acknowledge its contents |
 | [Durable delivery before the notification][inbox] | A missing notification or uncertain reply cannot erase the pending work or justify another send |
-| [Decision holds separate from task completion][holds] | 00 Agent completion and inbox processing cannot supply an owner answer |
+| [Decision holds separate from task completion][holds] | 00-Agent completion and inbox processing cannot supply an owner answer |
 
-Monarchy intentionally keeps unanswered decisions after a 00 agent reports
+Monarchy intentionally keeps unanswered decisions after a 00-Agent reports
 completion. It does not copy First Mate's task-type-specific terminal clearing
 rules. The integration fixture exercises Monarchy's equivalent contracts. A
 separate upstream test runs First Mate's pinned outcome store in an isolated
@@ -126,7 +126,7 @@ instructions arrive intact, not that an agent will follow them.
 Finally, process restart is not machine-loss recovery. SQLite receipts depend
 on the underlying storage. Backup, restore to a new host, unattended scheduling,
 real project acceptance and authorization for external actions remain separate
-requirements. The court should know what it has proved before it takes the throne.
+requirements. Check what Monarchy has proved before entrusting it with more work.
 
 [wake]: https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/tests/fm-wake-queue.test.sh
 [outcomes]: https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/bin/fm-branch-outcome.sh

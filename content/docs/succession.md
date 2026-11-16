@@ -1,4 +1,4 @@
-# Pass the Crown
+# Pass the crown
 
 A handoff transfers responsibility. Copying a summary into another chat is only
 part of it.
@@ -18,7 +18,7 @@ Do this before context exhaustion, not after it.
 The Secretary arranges a successor under the existing assignment. For a Queen
 or Secretary replacement, record the outgoing and incoming session identities in
 [the leadership record](../templates/leadership.md). Authority to take over must
-come from the owner or an existing, explicit succession grant. A 00 Agent cannot
+come from the owner or an existing, explicit succession grant. A 00-Agent cannot
 appoint itself Queen.
 
 ## Transfer in this order

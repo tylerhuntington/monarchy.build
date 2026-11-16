@@ -119,7 +119,7 @@ export function DocsNavigation({
       <aside className="docs-sidebar">
         {searchButton}
         {nav}
-        <p className="sidebar-foot">One conversation. An entire court.</p>
+        <p className="sidebar-foot">One conversation. An entire empire.</p>
       </aside>
       <div className="docs-mobile-toolbar">
         <button

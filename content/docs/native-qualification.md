@@ -1,6 +1,6 @@
-# The first live court run
+# The first live run
 
-The read-only pilot passed on November 16, 2026 (UTC). A real worker in a separate
+The read-only pilot passed on November 16, 2026 (UTC). A real 00-Agent in a separate
 Conductor workspace received an assignment, sent progress and completion reports,
 and returned an immutable source check. The Secretary kept routine progress quiet,
 checked the result independently, and put the verified result in the Queen inbox.
@@ -27,7 +27,7 @@ from the machine's repository list. The exact-name readback found no created
 workspace. The pilot then used an allowed PISCES workspace and cloned the exact
 Monarchy source under `.context`. No machine settings were changed.
 
-The worker read the checkpoint and verification skills and used
+The 00-Agent read the checkpoint and verification skills and used
 `monarchy.conductor.report_text` to validate its reports. This exercises those
 instructions in a real assignment; it is not a scored evaluation of the skill pack.
 
@@ -43,16 +43,16 @@ instructions in a real assignment; it is not a scored evaluation of the skill pa
 4. The completion report passed the same sender checks. It created work for the
    Secretary and left the task incomplete, pending verification.
 5. The maintainer independently read the reported Git object from another
-   checkout. Its README had 11,686 bytes and the same SHA-256 as the worker's
+   checkout. Its README had 11,686 bytes and the same SHA-256 as the 00-Agent's
    report. A separate review repeated that check and reread the native report.
 6. Verification created a result for the Queen. Reopening the database returned
    the same unprocessed presentation. Explicit acknowledgment, followed by another
    reopen, returned an empty inbox.
 
-The worker reported the same full revision and a clean tracked tree before and
+The 00-Agent reported the same full revision and a clean tracked tree before and
 after its work. The independent content check confirms the immutable README
 bytes. It does not independently observe every filesystem action inside the
-worker's VM.
+00-Agent's VM.
 
 ## Keep the scope of the proof clear
 
@@ -70,4 +70,4 @@ install a background service, or evaluate the 72 skill scenarios.
 
 The runtime remains opt-in. Native owner input, automatic prompt protection,
 additional profiles and unattended operation each need their own qualification.
-Reading one successful receipt should make the court's limits easier to see.
+Reading one successful receipt should make Monarchy's limits easier to see.

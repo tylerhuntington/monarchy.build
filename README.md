@@ -15,8 +15,9 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. The homepage includes an interactive example of the
-court at work; `/docs/` contains the guides and CLI reference.
+Open http://localhost:3000. The homepage shows how a request moves from the Queen
+through the Secretary and 00-Agents, then back to your conversation. `/docs/`
+contains the guides and CLI reference.
 
 ## Check a change
 
@@ -47,13 +48,10 @@ written against. See [the content guide](content/README.md) to update them.
 to `out`. This site uses static export: no server, database, functions, or runtime
 secrets. Local fonts ship with the build.
 
-Link the checkout to the existing Netlify project, then publish the checked build
-from this repository:
-
-```sh
-npx netlify-cli link
-npx netlify-cli deploy --dir=out --prod --no-build
-```
+The `monarchy-build` Netlify project builds and publishes pushes to `main`.
+Run the checks above and review the PR before merging. After the merge, confirm
+that Netlify's published deploy points to the merged commit, then check the live
+homepage and docs.
 
 `monarchy.build` is the canonical domain. Keep domain credentials outside this
 repository. DNS remains at Spaceship; change only the website’s records and

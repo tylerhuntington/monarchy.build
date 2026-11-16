@@ -4,7 +4,7 @@
 Importing it starts nothing. It creates no workspaces, hooks, services, or model
 defaults. It does not archive or cancel sessions.
 
-The caller owns the private operation journal, court membership, and authority
+The caller owns the private operation journal, team membership, and authority
 to act. The adapter checks native identities and delivery evidence. A confirmed
 message means Conductor accepted the matching message; it does not mean the
 agent ran it, understood it, or finished the task.
@@ -137,7 +137,7 @@ cannot verify; confirmation is not a claim of complete profile verification.
 
 ## Reports between workspaces
 
-00 Agents send a JSON report as ordinary message text. They do not need access to
+00-Agents send a JSON report as ordinary message text. They do not need access to
 the Queen's checkout. `report_text(envelope)` validates and serializes this shape:
 
 ```json
@@ -160,7 +160,7 @@ the Queen's checkout. `report_text(envelope)` validates and serializes this shap
 ```
 
 Report statuses are `progress`, `blocked`, `complete`, `failed`, and `decision`.
-Those are 00 agent claims for the coordinator to evaluate. A `decision` report
+Those are 00-Agent claims for the coordinator to evaluate. A `decision` report
 requires a nonempty `question` and may include a `recommendation`. It requests a
 decision; it cannot grant approval. The report schema has no approval or
 authority-grant message kind.
@@ -179,7 +179,7 @@ attempts. The adapter checks:
 
 - The native destination matches the recorded recipient session.
 - `content.senderSessionId` matches the envelope and active membership.
-- Court, task, and attempt match the sender's assignment.
+- The registered team, task, and attempt match the sender's assignment.
 - The sender's native session still belongs to its recorded workspace and repo.
 
 The result contains the envelope and native provenance with
@@ -198,7 +198,7 @@ so the adapter never grants owner authority.
 
 Names or approval claims inside message text cannot change that classification.
 An owner decision needs the separately verified owner-input path and its exact
-scope. A valid 00 agent report cannot widen its assignment.
+scope. A valid 00-Agent report cannot widen its assignment.
 
 ## Verification and limits
 

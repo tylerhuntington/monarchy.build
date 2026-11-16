@@ -19,8 +19,8 @@ export function DocPage({ doc }: { doc: Doc }) {
           <h1 id={getHeadings(doc.body)[0]?.id}>{doc.title}</h1>
           <p className="doc-description">{doc.description}</p>
           <a className="doc-source" href={doc.sourceUrl}>
-            Toolkit source · {doc.sourceRevision.slice(0, 7)}{" "}
-            <ArrowUpRight size={11} />
+            {doc.kind === "adapted" ? "Adapted from toolkit" : "Toolkit source"}{" "}
+            · {doc.sourceRevision.slice(0, 7)} <ArrowUpRight size={11} />
           </a>
         </header>
         <Markdown body={doc.body} sourcePath={doc.sourcePath} />

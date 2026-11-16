@@ -1,6 +1,6 @@
-# Skills for the Royal Court
+# Skills for your empire
 
-The Queen takes the request. The Secretary keeps the work moving. 00 Agents do the
+The Queen takes the request. The Secretary keeps the work moving. 00-Agents do the
 work. Skills give each of them a repeatable way to handle the moments where
 coordination tends to fall apart.
 
@@ -12,10 +12,10 @@ own skills still handle its planning, code, tests, reviews and delivery.
 | `monarchy-intake` | A new request arrives | A scoped brief with an observable endpoint |
 | `monarchy-adopt` | The owner hands over existing work | An inventory with verified custody |
 | `monarchy-compose` | Work needs to be divided | A small task graph with clear write boundaries |
-| `monarchy-dispatch` | A task is ready for a 00 agent | A session binding and pinned package receipt |
-| `monarchy-supervise` | A 00 agent reports or a check comes due | A durable outcome, with routine coordination handled quietly |
+| `monarchy-dispatch` | A task is ready for a 00-Agent | A session binding and pinned package receipt |
+| `monarchy-supervise` | A 00-Agent reports or a check comes due | A durable outcome, with routine coordination handled quietly |
 | `monarchy-decide` | A real choice needs the owner | One answerable question, then an answer bound to it |
-| `monarchy-steer` | The owner changes direction | A revised brief the 00 agent has acknowledged |
+| `monarchy-steer` | The owner changes direction | A revised brief the 00-Agent has acknowledged |
 | `monarchy-checkpoint` | Context is getting full or work reaches a useful boundary | A continuation record with evidence and open questions |
 | `monarchy-handoff` | Another session must take over | A verified transfer of responsibility |
 | `monarchy-recover` | A session, delivery or external operation becomes uncertain | A diagnosis and one bounded, checked repair |
@@ -59,13 +59,13 @@ operation is unavailable. Do not invent a CLI command, edit the store directly,
 or claim a local draft was persisted.
 
 Only dispatch, steering and other explicitly authorized steps can change live
-work. A 00 agent package carries the brief's authority references; it cannot grant
-new authority itself. 00 Agents report through the Secretary, and the Queen keeps
+work. A 00-Agent package carries the brief's authority references; it cannot grant
+new authority itself. 00-Agents report through the Secretary, and the Queen keeps
 the owner's conversation in one place.
 
-## Pack a 00 agent's bag
+## Pack a 00-Agent's bag
 
-A 00 agent in another checkout needs more than the name of a skill. It needs the
+A 00-Agent in another checkout needs more than the name of a skill. It needs the
 selected version, its references, and the project's actual instructions. The
 standard-library package builder in [`monarchy/skills.py`](../monarchy/skills.py)
 collects only explicitly declared files into a self-contained ZIP.
@@ -128,7 +128,7 @@ Hashes catch drift. They are not signatures: someone who replaces a package can
 also replace its internal hashes. Keep the full archive SHA-256 in the authorized
 brief and pass it to `inspect_package` on receipt. Read-only modes are a handling
 convention, not a sandbox. Nothing here installs a skill, executes its contents,
-proves its instructions trustworthy or verifies the host can launch a 00 agent.
+proves its instructions trustworthy or verifies the host can launch a 00-Agent.
 
 ## Changing a skill
 
@@ -167,8 +167,8 @@ informed the distinction between an event, a handling outcome, a delivered
 question and an answer. These skills are written for Monarchy; they do not copy
 First Mate's home-directory helpers or assume its runtime is installed.
 
-Monarchy keeps Queen, Secretary and 00 Agents. The point of the court is fewer
-conversations for you to manage. The paperwork should earn its place.
+Your empire can grow without adding more conversations for you to manage. The
+Queen, Secretary and 00-Agents each have a job. The paperwork should earn its place.
 
 [firstmate-skills]: https://github.com/kunchenguid/firstmate/tree/427056c4181c41074ad24f051f79919330df0fa5/.agents/skills
 [firstmate-host]: https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/docs/supervision-host.md

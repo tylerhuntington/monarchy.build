@@ -1,4 +1,4 @@
-# The court keeps its receipts
+# Your empire keeps its receipts
 
 `monarchy.records.CourtRecords` keeps task assignments, incoming reports,
 decisions, results, and external-operation receipts in one private SQLite
@@ -33,10 +33,10 @@ Use one `CourtRecords` instance per thread or process.
 
 A task has one owner and a monotonically increasing assignment generation.
 `assign_task` compares the caller's expected generation before changing the
-owner. Old 00 agents cannot append new reports, and old claims cannot acknowledge
+owner. Old 00-Agents cannot append new reports, and old claims cannot acknowledge
 reports after that change. An exact retry of an already recorded report remains
 harmless. Reassignment releases unfinished claims so the next Secretary can
-read their events. It does not stop a native 00 agent or prove that its commands
+read their events. It does not stop a native 00-Agent or prove that its commands
 have stopped; the host must establish that before handing work over.
 
 Event IDs identify immutable envelopes: task, generation, actor, kind, and JSON
@@ -51,7 +51,7 @@ Outcomes have their own stable IDs and explicit recipients. Presenting a batch
 records what was shown; it does not mark those outcomes processed. Processing
 requires the presentation ID, its actor, and explicit outcome IDs. Both steps
 survive restart. Recording a result, acknowledging an event, or receiving a
-00 agent's `done` report never answers a pending decision.
+00-Agent's `done` report never answers a pending decision.
 
 Decisions retain an independent revision history. An answer names the expected
 revision and the owner's message reference. Revising the question creates a new
@@ -176,7 +176,7 @@ and native Conductor transports are interchangeable:
 - [Wake queue tests](https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/tests/fm-wake-queue.test.sh): preserve reports arriving after a drain and reject stale acknowledgments.
 - [Task inbox](https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/bin/fm-task-inbox-lib.sh): deduplicate stable deliveries without treating changed content as a retry.
 - [Branch outcomes](https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/bin/fm-branch-outcome.sh): keep presentation separate from processing.
-- [Captain holds](https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/bin/fm-captain-hold.sh): keep operator decisions separate from 00 agent lifecycle reports.
+- [Captain holds](https://github.com/kunchenguid/firstmate/blob/427056c4181c41074ad24f051f79919330df0fa5/bin/fm-captain-hold.sh): keep operator decisions separate from 00-Agent lifecycle reports.
 
 SQLite replaces local file-and-shell record mechanics so independent cloud
 processes can share one transactional record layer. Native message provenance,

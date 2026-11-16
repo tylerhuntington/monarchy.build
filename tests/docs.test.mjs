@@ -135,3 +135,81 @@ test("search includes all visible guide bodies without leaking loader metadata",
   ]);
   assert.deepEqual(JSON.parse(JSON.stringify(index)), index);
 });
+
+test("sync preserves adapted prose and requires review when its toolkit source changes", async () => {
+  const { mkdtempSync, mkdirSync, writeFileSync, rmSync } =
+    await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const path = await import("node:path");
+  const { execFileSync, spawnSync } = await import("node:child_process");
+  const directory = mkdtempSync(path.join(tmpdir(), "monarchy-docs-sync-"));
+  const upstream = path.join(directory, "toolkit");
+  const website = path.join(directory, "website");
+  const script = path.resolve("scripts/sync-docs.mjs");
+  const hash = (body) => createHash("sha256").update(body).digest("hex");
+  const original =
+    "# Start a court\n\n```sh\nmonarchy --court example.json\n```\n";
+  const adapted =
+    "# Build your empire\n\n```sh\nmonarchy --court example.json\n```\n";
+  try {
+    mkdirSync(upstream, { recursive: true });
+    mkdirSync(path.join(website, "content/docs"), { recursive: true });
+    const git = (...args) =>
+      execFileSync("git", ["-C", upstream, ...args], {
+        encoding: "utf8",
+      }).trim();
+    git("init", "--quiet");
+    git("config", "user.name", "Documentation fixture");
+    git("config", "user.email", "fixture@example.invalid");
+    writeFileSync(path.join(upstream, "guide.md"), original);
+    git("add", "guide.md");
+    git("commit", "--quiet", "-m", "Initial source");
+    const firstRevision = git("rev-parse", "HEAD");
+    const fixture = {
+      revision: firstRevision,
+      documents: [
+        {
+          slug: "guide",
+          kind: "adapted",
+          sourcePath: "guide.md",
+          sha256: hash(adapted),
+          sourceSha256: hash(original),
+          derivedFrom: [{ path: "guide.md", sha256: hash(original) }],
+        },
+      ],
+    };
+    const manifestPath = path.join(website, "content/docs-manifest.json");
+    const pagePath = path.join(website, "content/docs/guide.md");
+    writeFileSync(manifestPath, JSON.stringify(fixture));
+    writeFileSync(pagePath, adapted);
+    const sync = (revision, ...args) =>
+      spawnSync(
+        process.execPath,
+        [script, "--source", upstream, "--revision", revision, ...args],
+        { cwd: website, encoding: "utf8" },
+      );
+    assert.equal(sync(firstRevision).status, 0);
+    assert.equal(readFileSync(pagePath, "utf8"), adapted);
+
+    const changed = original + "\nNew runtime behavior.\n";
+    writeFileSync(path.join(upstream, "guide.md"), changed);
+    git("add", "guide.md");
+    git("commit", "--quiet", "-m", "Changed source");
+    const nextRevision = git("rev-parse", "HEAD");
+    const priorManifest = readFileSync(manifestPath, "utf8");
+    const held = sync(nextRevision);
+    assert.notEqual(held.status, 0);
+    assert.match(held.stderr, /depends on changed source/);
+    assert.equal(readFileSync(manifestPath, "utf8"), priorManifest);
+    assert.equal(readFileSync(pagePath, "utf8"), adapted);
+
+    assert.equal(sync(nextRevision, "--reviewed-curated").status, 0);
+    const updated = JSON.parse(readFileSync(manifestPath, "utf8"));
+    assert.equal(updated.revision, nextRevision);
+    assert.equal(updated.documents[0].sourceSha256, hash(changed));
+    assert.equal(updated.documents[0].sha256, hash(adapted));
+    assert.equal(readFileSync(pagePath, "utf8"), adapted);
+  } finally {
+    rmSync(directory, { recursive: true, force: true });
+  }
+});

@@ -45,6 +45,7 @@ const updates = manifest.documents.map((doc) => {
     }
     return { path: sourcePath, sha256: newHash };
   });
+  // Adapted and authored prose stays local; changed evidence requires review above.
   const body =
     doc.kind === "imported"
       ? upstream

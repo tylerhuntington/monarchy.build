@@ -1,7 +1,12 @@
 # Working on monarchy.build
 
 This repository owns Monarchy's public Next.js site. The toolkit lives at
-https://github.com/tylerhuntington/monarchy. Preserve Queen, Secretary and 00 Agents.
+https://github.com/tylerhuntington/monarchy. Use Queen, Secretary and 00-Agents
+(singular: 00-Agent). Use “Meet the Royalty” for the roles guide and “build an
+empire” for the wider framing. Keep the Queen as the reader’s single conversation;
+the Secretary coordinates work behind the scenes. Preserve real command, API and
+file identifiers even when they use older terminology. Keep the wit light and the
+instructions direct.
 
 Keep the design spare and accessible. Use the real toolkit interfaces; never invent
 an installer, hosted service or unattended capability. Pin imported docs and retain

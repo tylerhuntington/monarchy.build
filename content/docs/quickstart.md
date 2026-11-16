@@ -1,8 +1,8 @@
-# Start a Court
+# Build your empire
 
-Set up one conversation with the Queen, then give the court a small task in
-Conductor cloud. Start with a read-only investigation: the result should come
-back to the Queen without you coordinating the 00 Agents.
+Start with one conversation and one task. Set up the Queen in Conductor cloud,
+then ask for a read-only investigation. The result should come back to her
+without you coordinating the 00-Agents.
 
 You need Python 3.9 or later on macOS or Linux, plus Bash and jq for the upstream
 compatibility test. Live work also needs the Conductor CLI with access to your
@@ -24,7 +24,7 @@ python3 -m unittest discover -s tests -v
 The check command prints `"valid": true` with zero tasks. The tests should pass
 without credentials or network access. They exercise the record layer, transport
 fixtures, skill packages, and an isolated First Mate outcome store. They do not
-launch a live court or prove that an agent follows a skill correctly.
+launch a live agent team or prove that an agent follows a skill correctly.
 
 ## 2. Give the Queen a home
 
@@ -47,18 +47,18 @@ an approved durable location before the machine goes away.
 The runtime's canonical task state is a private SQLite database outside the
 checkout. `.monarchy/court.json` is only the observer's watch list; it does not
 replace the journal. Follow [the runtime setup](runtime.md) to register the
-existing 00 Agent and Secretary sessions before sending a task. Setup starts no
+existing 00-Agent and Secretary sessions before sending a task. Setup starts no
 watcher, agent, or service.
 
 Start your chosen agent in that workspace and give it this instruction:
 
-> Act as the Queen using AGENTS.md and roles/queen.md. Establish this court for
+> Act as the Queen using AGENTS.md and roles/queen.md. Set up this agent team for
 > the project I specify. Keep a leadership record, use a Secretary for
 > coordination, and follow each project's existing rules. Keep my requests,
 > status updates, important decisions, and results in this conversation. Start
 > with one read-only task. Ask for missing project or model choices before dispatch.
 
-This authorizes setup of that court and the bounded task, not changes to every
+This authorizes setup of that team and the bounded task, not changes to every
 repository the agent can access. The Queen records the project, model choices,
 report route, and limits, then uses [the Conductor guide](conductor.md) to arrange
 the Secretary and task session. Monarchy does not install a service or hooks.
@@ -71,7 +71,7 @@ Give the Queen an outcome such as:
 > with file references. Do not change files or publish anything.
 
 The Queen records the brief and endpoint. The Secretary selects the
-[skills and project instructions](skills.md) the 00 Agent needs, registers its
+[skills and project instructions](skills.md) the 00-Agent needs, registers its
 native binding, then prepares and explicitly delivers the assignment through
 [the runtime](runtime.md). Start with an existing session whose observed profile
 matches the requested one; the current CLI cannot explicitly disable fast mode
@@ -85,9 +85,9 @@ observer does not.
 ## 4. Get the result in the Queen's thread
 
 Ask the Queen how the task is going. She should give you a concise status and any
-choice that needs your input. Routine questions and follow-ups stay with the court.
+choice that needs your input. The Secretary handles routine questions and follow-ups.
 
-When the 00 Agent finishes, the Secretary ingests its native report and checks the
+When the 00-Agent finishes, the Secretary ingests its native report and checks the
 file references. Independent review ties the result to the exact source revision
 before it reaches the Queen's results inbox. The Queen returns the explanation
 and evidence in your conversation. Check that it answers the original request.
@@ -95,7 +95,7 @@ You should not need to relay a report or ask a
 second agent to pick up the work.
 
 If the result is incomplete, tell the Queen what's missing. She routes the
-follow-up through the court within the original assignment, or asks about any
+follow-up through the Secretary within the original assignment, or asks about any
 new scope.
 
 ### Optional: inspect the machinery
@@ -113,7 +113,7 @@ status means the turn ended, not that the requested outcome passed.
 To exercise recovery, ask the Queen to arrange a handoff to a fresh session.
 The successor should recover the request and decisions from the records and
 accept ownership through [the succession protocol](succession.md). This checks
-how the court preserves your direction when an underlying session changes.
+how Monarchy preserves your direction when an underlying session changes.
 
 ## Next
 
