@@ -92,12 +92,15 @@ summary:focus-visible {
 }
 .header-inner {
   height: 72px;
-  max-width: 1280px;
-  padding: 0 40px;
   margin: auto;
   display: flex;
   align-items: center;
   gap: 40px;
+}
+.header-inner-docs {
+  width: 100%;
+  max-width: 1440px;
+  padding-inline: 30px;
 }
 .brand {
   display: inline-flex;
@@ -224,12 +227,6 @@ summary:focus-visible {
 }
 .button-secondary:hover {
   background: #f0f0f0;
-}
-.hero-note {
-  font-family: var(--font-code), monospace;
-  font-size: 10px;
-  color: #6e6e6e;
-  margin-top: 18px;
 }
 .section-kicker {
   display: flex;
@@ -874,6 +871,9 @@ summary:focus-visible {
   border-top: 1px solid var(--border);
 }
 @media (min-width: 1440px) {
+  .header-inner-docs {
+    border-inline: 1px solid transparent;
+  }
   .docs-shell {
     border-inline: 1px solid var(--border);
   }
@@ -906,8 +906,10 @@ summary:focus-visible {
   }
   .header-inner {
     height: 64px;
-    padding: 0 20px;
     gap: 25px;
+  }
+  .header-inner-docs {
+    padding-inline: 14px;
   }
   .site-header .brand {
     font-size: 21px;
@@ -999,6 +1001,9 @@ summary:focus-visible {
   }
 }
 @media (max-width: 600px) {
+  .header-inner-docs {
+    padding-inline: 20px;
+  }
   .desktop-nav,
   .header-cta {
     display: none;
@@ -1011,7 +1016,7 @@ summary:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    padding: 18px 24px;
+    padding: 18px 20px;
     border-top: 1px solid var(--border);
     font-size: 14px;
   }
@@ -1043,10 +1048,6 @@ summary:focus-visible {
     font-size: 11px;
     padding: 11px 14px;
     gap: 15px;
-  }
-  .hero-note {
-    font-size: 8px;
-    margin-top: 16px;
   }
   .section-kicker {
     font-size: 11px;

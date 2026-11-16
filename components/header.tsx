@@ -6,10 +6,11 @@ import { useState } from "react";
 import { Crown } from "./brand";
 export function Header() {
   const pathname = usePathname();
+  const isDocs = pathname.startsWith("/docs");
   const [open, setOpen] = useState(false);
   return (
     <header className="site-header">
-      <div className="header-inner">
+      <div className={`header-inner ${isDocs ? "header-inner-docs" : "page-width"}`}>
         <Link
           className="brand"
           href="/"
@@ -22,7 +23,7 @@ export function Header() {
         <nav className="desktop-nav" aria-label="Main navigation">
           <Link
             href="/docs/"
-            aria-current={pathname.startsWith("/docs") ? "page" : undefined}
+            aria-current={isDocs ? "page" : undefined}
           >
             Documentation
           </Link>
