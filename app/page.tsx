@@ -33,9 +33,9 @@ export default function Home() {
               Royal orchestration for coding agents
             </div>
             <h1 id="hero-heading">
-              Build an empire.
+              Run your Empire
               <br />
-              One conversation.
+              from a single chat&nbsp;thread.
             </h1>
             <p className="hero-description">
               Talk to the Queen. Her Secretary coordinates your 00-Agents
