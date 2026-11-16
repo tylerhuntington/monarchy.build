@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/tylerhuntington/monarchy",
+  "revision": "f5911f6e4562516280cb8772cea4609a4968779b",
+  "documents": [
+    {
+      "slug": "introduction",
+      "title": "Welcome to Monarchy",
+      "description": "Keep calm. DM the Queen.",
+      "section": "Start here",
+      "kind": "authored",
+      "sourcePath": "README.md",
+      "sha256": "148141468b79b57815c97c76c085f95294b061f26fe7dc78ff9c2f0b940fa4c2",
+      "sourceSha256": "18855066d7dafa0a4dfd9d827445db16a725396533286a48ca8d03b76ff78f00",
+      "derivedFrom": [
+        {
+          "path": "README.md",
+          "sha256": "18855066d7dafa0a4dfd9d827445db16a725396533286a48ca8d03b76ff78f00"
+        },
+        {
+          "path": "docs/how-it-works.md",
+          "sha256": "62584cd57d9f85800f78915069aa3593b0ae0fdda22bf7d4b26d0ddf9931b15f"
+        },
+        {
+          "path": "docs/succession.md",
+          "sha256": "9a599fe8970e73cde9de5fda35aebdf3fd36c4f4fd5d9def984dc9f1f0b3e850"
+        },
+        {
+          "path": "docs/limits.md",
+          "sha256": "94478d090116809fe44fd7615cffc4d97efd4bc7f3b16fc3e7bc7c493dda4e2b"
+        }
+      ]
+    },
+    {
+      "slug": "quickstart",
+      "title": "Start a court",
+      "description": "Give the Queen one task and follow it through to a checked result.",
+      "section": "Start here",
+      "kind": "imported",
+      "sourcePath": "docs/quickstart.md",
+      "sha256": "11b42e1b70160699c8fca96376ddb9badf424d85857a304714340e969f5a916a",
+      "sourceSha256": "11b42e1b70160699c8fca96376ddb9badf424d85857a304714340e969f5a916a"
+    },
+    {
+      "slug": "how-it-works",
+      "title": "Meet the Royal Court",
+      "description": "One conversation for you. Clear assignments for everyone behind it.",
+      "section": "Start here",
+      "kind": "imported",
+      "sourcePath": "docs/how-it-works.md",
+      "sha256": "62584cd57d9f85800f78915069aa3593b0ae0fdda22bf7d4b26d0ddf9931b15f",
+      "sourceSha256": "62584cd57d9f85800f78915069aa3593b0ae0fdda22bf7d4b26d0ddf9931b15f"
+    },
+    {
+      "slug": "succession",
+      "title": "Pass the crown",
+      "description": "Keep the request, decisions and unfinished work together when a session changes.",
+      "section": "Start here",
+      "kind": "imported",
+      "sourcePath": "docs/succession.md",
+      "sha256": "9a599fe8970e73cde9de5fda35aebdf3fd36c4f4fd5d9def984dc9f1f0b3e850",
+      "sourceSha256": "9a599fe8970e73cde9de5fda35aebdf3fd36c4f4fd5d9def984dc9f1f0b3e850"
+    },
+    {
+      "slug": "runtime",
+      "title": "Run the court",
+      "description": "Register assignments, handle reports and return checked results.",
+      "section": "Operate a court",
+      "kind": "imported",
+      "sourcePath": "docs/runtime.md",
+      "sha256": "e767fc88b090be2e6aa80d8a1e2b93920c69d0cd79f41dd0bf8ddcf3ec716601",
+      "sourceSha256": "e767fc88b090be2e6aa80d8a1e2b93920c69d0cd79f41dd0bf8ddcf3ec716601"
+    },
+    {
+      "slug": "skills",
+      "title": "Skills and packages",
+      "description": "Twelve orchestration skills, with the project instructions each agent needs.",
+      "section": "Operate a court",
+      "kind": "imported",
+      "sourcePath": "docs/skills.md",
+      "sha256": "7efdbf94152115106109ea5f4e5eaaedfe61ef87083b64bbde1ec0d7c7437965",
+      "sourceSha256": "7efdbf94152115106109ea5f4e5eaaedfe61ef87083b64bbde1ec0d7c7437965"
+    },
+    {
+      "slug": "conductor",
+      "title": "Conductor setup",
+      "description": "Arrange the Queen, Secretary and task sessions in Conductor cloud.",
+      "section": "Operate a court",
+      "kind": "imported",
+      "sourcePath": "docs/conductor.md",
+      "sha256": "9f14529dace44e8d9d8326e956f0b963cf1f17395bb7c349c8db97b84a4f74b7",
+      "sourceSha256": "9f14529dace44e8d9d8326e956f0b963cf1f17395bb7c349c8db97b84a4f74b7"
+    },
+    {
+      "slug": "observer",
+      "title": "Watch the court",
+      "description": "Read session and pull request changes with a bounded observer.",
+      "section": "Operate a court",
+      "kind": "imported",
+      "sourcePath": "docs/observer.md",
+      "sha256": "023dae669362211b5cf84f7c1122ca8469263d3ad4cb04ff2b015cacb1d01d6d",
+      "sourceSha256": "023dae669362211b5cf84f7c1122ca8469263d3ad4cb04ff2b015cacb1d01d6d"
+    },
+    {
+      "slug": "cli",
+      "title": "CLI reference",
+      "description": "Every court and observer command, with its inputs and effects.",
+      "section": "Reference",
+      "kind": "authored",
+      "sourcePath": "monarchy/__main__.py",
+      "sha256": "926ccd7198f5eaf96324719c33348912415d53763d83d3b04f7ec6bdba101dae",
+      "sourceSha256": "b2640ff053f6ad3f6f182335231ee21cc43798092a0d910b1a98ff9ce7a721a4",
+      "derivedFrom": [
+        {
+          "path": "monarchy/__main__.py",
+          "sha256": "b2640ff053f6ad3f6f182335231ee21cc43798092a0d910b1a98ff9ce7a721a4"
+        },
+        {
+          "path": "bin/monarchy.py",
+          "sha256": "a4623fb94e5b38f131dca51decdc1b420a8801ca7a64176207b54c3dff124951"
+        },
+        {
+          "path": "docs/runtime.md",
+          "sha256": "e767fc88b090be2e6aa80d8a1e2b93920c69d0cd79f41dd0bf8ddcf3ec716601"
+        },
+        {
+          "path": "docs/observer.md",
+          "sha256": "023dae669362211b5cf84f7c1122ca8469263d3ad4cb04ff2b015cacb1d01d6d"
+        }
+      ]
+    },
+    {
+      "slug": "runtime-records",
+      "title": "Record API",
+      "description": "The Python and SQLite contract for assignments, decisions and receipts.",
+      "section": "Reference",
+      "kind": "imported",
+      "sourcePath": "docs/runtime-records.md",
+      "sha256": "73910eb2371d54e88f0c212c3caac98e7677460d9a696e96c9cbe8ded3556e04",
+      "sourceSha256": "73910eb2371d54e88f0c212c3caac98e7677460d9a696e96c9cbe8ded3556e04"
+    },
+    {
+      "slug": "conductor-transport",
+      "title": "Transport API",
+      "description": "Native identities, report envelopes and delivery reconciliation.",
+      "section": "Reference",
+      "kind": "imported",
+      "sourcePath": "docs/conductor-transport.md",
+      "sha256": "b18cbc1913e19c29c2a9a7b23a25732524bee86816d6d6369d0463d69203aa75",
+      "sourceSha256": "b18cbc1913e19c29c2a9a7b23a25732524bee86816d6d6369d0463d69203aa75"
+    },
+    {
+      "slug": "qualification",
+      "title": "Offline qualification",
+      "description": "What the fixtures and compatibility checks prove.",
+      "section": "Verification",
+      "kind": "imported",
+      "sourcePath": "docs/qualification.md",
+      "sha256": "9090a34a2e8b8d9c2eaada167b1e3f78fc41ab45b57ab2a64751afe9bb745162",
+      "sourceSha256": "9090a34a2e8b8d9c2eaada167b1e3f78fc41ab45b57ab2a64751afe9bb745162"
+    },
+    {
+      "slug": "native-qualification",
+      "title": "The first live run",
+      "description": "Evidence from a read-only court running in native Conductor sessions.",
+      "section": "Verification",
+      "kind": "imported",
+      "sourcePath": "docs/native-qualification.md",
+      "sha256": "5e3855af2ec04da45260d83e7d57f3539b8dceee4e13c57b3ac3703e34956b25",
+      "sourceSha256": "5e3855af2ec04da45260d83e7d57f3539b8dceee4e13c57b3ac3703e34956b25"
+    },
+    {
+      "slug": "limits",
+      "title": "Current limits",
+      "description": "Know what is implemented, what is qualified and what still needs a host.",
+      "section": "Verification",
+      "kind": "imported",
+      "sourcePath": "docs/limits.md",
+      "sha256": "94478d090116809fe44fd7615cffc4d97efd4bc7f3b16fc3e7bc7c493dda4e2b",
+      "sourceSha256": "94478d090116809fe44fd7615cffc4d97efd4bc7f3b16fc3e7bc7c493dda4e2b"
+    }
+  ]
+}
