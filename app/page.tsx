@@ -38,7 +38,7 @@ export default function Home() {
               from a single thread.
             </h1>
             <p className="hero-description">
-              Let the crown rule the masses, so you can rule the vibes.
+              Let the Crown rule the masses, so you can rule the vibes.
             </p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/docs/quickstart/">
