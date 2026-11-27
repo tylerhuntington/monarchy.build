@@ -1,4 +1,4 @@
-# Build your empire in Conductor
+# Build your fleet in Conductor
 
 Use one Monarchy cloud workspace for the Queen and Secretary, and one isolated
 project workspace per independent task. Sequential stages can share a task

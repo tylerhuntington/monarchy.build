@@ -1,4 +1,4 @@
-# Build your empire
+# Build your fleet
 
 Start with one conversation and one task. Set up the Queen in Conductor cloud,
 then ask for a read-only investigation. The result should come back to her

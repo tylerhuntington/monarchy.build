@@ -33,7 +33,7 @@ export default function Home() {
               Royal orchestration for coding agents
             </div>
             <h1 id="hero-heading">
-              Run agent empires
+              Run agent fleets
               <br />
               from a single thread.
             </h1>
@@ -61,7 +61,7 @@ export default function Home() {
             <span id="court-heading">
               A little hierarchy. A lot less tab fatigue.
             </span>
-            <span className="mono subtle">YOUR EMPIRE AT WORK</span>
+            <span className="mono subtle">YOUR FLEET AT WORK</span>
           </div>
           <CourtDemo />
         </section>
@@ -102,7 +102,7 @@ export default function Home() {
             <RotateCcw size={20} />
             <h2>
               New session.
-              <br /> Same empire.
+              <br /> Same fleet.
             </h2>
             <p>
               Even Queens run out of context. A checked handoff carries the
@@ -115,7 +115,7 @@ export default function Home() {
         </section>
         <section className="under-hood page-width">
           <div className="under-hood-copy">
-            <span className="eyebrow">KEEP YOUR EMPIRE IN ORDER</span>
+            <span className="eyebrow">KEEP YOUR FLEET IN ORDER</span>
             <h2>
               A crown is optional.
               <br /> A paper trail isn’t.
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="journal-preview">
             <div className="terminal-title">
               <Terminal size={15} />
-              <span>YOUR EMPIRE’S WORKING RECORD</span>
+              <span>YOUR FLEET’S WORKING RECORD</span>
               <span className="example-label">Example</span>
             </div>
             <div className="journal-row">
@@ -168,7 +168,7 @@ export default function Home() {
           <div>
             <span className="eyebrow">YOUR MOVE</span>
             <h2>
-              Every empire
+              Every fleet
               <br /> starts somewhere.
             </h2>
             <p>Start with one project and one task. Build from there.</p>

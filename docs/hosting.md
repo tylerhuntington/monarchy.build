@@ -1,4 +1,4 @@
-# Hosting the empire
+# Hosting the fleet
 
 Cloudflare Workers Static Assets serves [monarchy.build](https://monarchy.build)
 from the Next.js export. There is no server runtime. This keeps the setup small and avoids

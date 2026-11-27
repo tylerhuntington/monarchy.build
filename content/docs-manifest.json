@@ -10,7 +10,7 @@
       "section": "Start here",
       "kind": "authored",
       "sourcePath": "README.md",
-      "sha256": "b16617025f89ac01772ca46a424febbe14e716e839e51185e5380f15c3009e77",
+      "sha256": "a0b8de252e0f77f1eaaba8c704217ff2306ec4ed2ee14f3bbf7b8a35c1c8c1b7",
       "sourceSha256": "18855066d7dafa0a4dfd9d827445db16a725396533286a48ca8d03b76ff78f00",
       "derivedFrom": [
         {
@@ -33,12 +33,12 @@
     },
     {
       "slug": "quickstart",
-      "title": "Build your empire",
+      "title": "Build your fleet",
       "description": "Give the Queen one task and follow it through to a checked result.",
       "section": "Start here",
       "kind": "adapted",
       "sourcePath": "docs/quickstart.md",
-      "sha256": "6e5fe2e43e4e5fb668d9ef914cf3ffdf4124e4803ce33631507ef458da0748b6",
+      "sha256": "73d606f6ce9b5c03a46671b29c619049b664311e5387ff930f18813c07e367dd",
       "sourceSha256": "11b42e1b70160699c8fca96376ddb9badf424d85857a304714340e969f5a916a",
       "derivedFrom": [
         {
@@ -81,12 +81,12 @@
     },
     {
       "slug": "runtime",
-      "title": "Run your empire",
+      "title": "Run your fleet",
       "description": "Register assignments, handle reports and return checked results.",
-      "section": "Run your empire",
+      "section": "Run your fleet",
       "kind": "adapted",
       "sourcePath": "docs/runtime.md",
-      "sha256": "58202da178c70c582f502f983e8bf33166cd5600e36add01499e49da288f9c61",
+      "sha256": "f1764e559de9a28f37e7dc25ba7b2af1bc83d5b24ef6030145266103d4b6d726",
       "sourceSha256": "e767fc88b090be2e6aa80d8a1e2b93920c69d0cd79f41dd0bf8ddcf3ec716601",
       "derivedFrom": [
         {
@@ -99,10 +99,10 @@
       "slug": "skills",
       "title": "Skills and packages",
       "description": "Twelve orchestration skills, with the project instructions each agent needs.",
-      "section": "Run your empire",
+      "section": "Run your fleet",
       "kind": "adapted",
       "sourcePath": "docs/skills.md",
-      "sha256": "6c81bacd82752e7195f00e24244c176eb4b4a84438e0412b2ac9ced76f0096a4",
+      "sha256": "e25b8cf4dd41068494b55e0b6993ab1fb812f9a891edff675626c9b628642943",
       "sourceSha256": "7efdbf94152115106109ea5f4e5eaaedfe61ef87083b64bbde1ec0d7c7437965",
       "derivedFrom": [
         {
@@ -115,10 +115,10 @@
       "slug": "conductor",
       "title": "Conductor setup",
       "description": "Set up the Queen, her Secretary and your 00-Agents in Conductor cloud.",
-      "section": "Run your empire",
+      "section": "Run your fleet",
       "kind": "adapted",
       "sourcePath": "docs/conductor.md",
-      "sha256": "606f43961dc1446ede7da8b8eb412d011dca6e5cd457732c659ac7008c2e190b",
+      "sha256": "6bf8b22b819178da329a00257462ebdd3d0c795e103e89c1338cea5de557af8b",
       "sourceSha256": "9f14529dace44e8d9d8326e956f0b963cf1f17395bb7c349c8db97b84a4f74b7",
       "derivedFrom": [
         {
@@ -131,7 +131,7 @@
       "slug": "observer",
       "title": "Watch your agents",
       "description": "Read session and pull request changes with a bounded observer.",
-      "section": "Run your empire",
+      "section": "Run your fleet",
       "kind": "adapted",
       "sourcePath": "docs/observer.md",
       "sha256": "eedcbc20e8a3818fb0cc540f774e41b9a0bcd929d0ee6e663a70239d8b62c25f",
@@ -150,7 +150,7 @@
       "section": "Reference",
       "kind": "authored",
       "sourcePath": "monarchy/__main__.py",
-      "sha256": "3a5f8a48bc3c7c5fc3eb8c50ba6d80d62dae7bc01bd74d746e66a1fe89d5aed3",
+      "sha256": "4f2a337d55177ae68b5e67ebe72b565530e13e6a3e5919840522dd0c69d833df",
       "sourceSha256": "b2640ff053f6ad3f6f182335231ee21cc43798092a0d910b1a98ff9ce7a721a4",
       "derivedFrom": [
         {
@@ -178,7 +178,7 @@
       "section": "Reference",
       "kind": "adapted",
       "sourcePath": "docs/runtime-records.md",
-      "sha256": "6c61aa094f15ea1a309af46ec11c8f1ca64ba97ecbb728f96781c36b9e8c2026",
+      "sha256": "2b78db0bfd0a07d7bdc8c7f7380f5755abb8f91f7d5af5223025feabbd69e06c",
       "sourceSha256": "73910eb2371d54e88f0c212c3caac98e7677460d9a696e96c9cbe8ded3556e04",
       "derivedFrom": [
         {

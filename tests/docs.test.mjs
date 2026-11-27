@@ -150,7 +150,7 @@ test("sync preserves adapted prose and requires review when its toolkit source c
   const original =
     "# Start a court\n\n```sh\nmonarchy --court example.json\n```\n";
   const adapted =
-    "# Build your empire\n\n```sh\nmonarchy --court example.json\n```\n";
+    "# Build your fleet\n\n```sh\nmonarchy --court example.json\n```\n";
   try {
     mkdirSync(upstream, { recursive: true });
     mkdirSync(path.join(website, "content/docs"), { recursive: true });

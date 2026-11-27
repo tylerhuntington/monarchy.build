@@ -1,6 +1,6 @@
-# One conversation. An entire empire.
+# One conversation. An entire fleet.
 
-Monarchy lets you rule an empire of coding agents through one conversation.
+Monarchy lets you rule a fleet of coding agents through one conversation.
 Talk to the Queen. Her Secretary divides the work, follows up with the 00-Agents
 and arranges reviews. Results and decisions that need your input come back to
 the throne for you to review.
@@ -51,9 +51,9 @@ it isn't the engine behind Monarchy.
 
 ## Start with one assignment
 
-[Build your empire](/docs/quickstart) with a small read-only investigation. Follow the
+[Build your fleet](/docs/quickstart) with a small read-only investigation. Follow the
 result back to the Queen, then add build work and independent review.
 
-For the machinery, read [Run your empire](/docs/runtime) and the
+For the machinery, read [Run your fleet](/docs/runtime) and the
 [CLI reference](/docs/cli). Keep the [current limits](/docs/limits) close by as
 you decide how much to delegate.
