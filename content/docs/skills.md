@@ -1,4 +1,4 @@
-# Skills for your empire
+# Skills for your fleet
 
 The Queen takes the request. The Secretary keeps the work moving. 00-Agents do the
 work. Skills give each of them a repeatable way to handle the moments where
@@ -167,7 +167,7 @@ informed the distinction between an event, a handling outcome, a delivered
 question and an answer. These skills are written for Monarchy; they do not copy
 First Mate's home-directory helpers or assume its runtime is installed.
 
-Your empire can grow without adding more conversations for you to manage. The
+Your fleet can grow without adding more conversations for you to manage. The
 Queen, Secretary and 00-Agents each have a job. The paperwork should earn its place.
 
 [firstmate-skills]: https://github.com/kunchenguid/firstmate/tree/427056c4181c41074ad24f051f79919330df0fa5/.agents/skills

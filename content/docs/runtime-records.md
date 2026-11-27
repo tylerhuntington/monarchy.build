@@ -1,4 +1,4 @@
-# Your empire keeps its receipts
+# Your fleet keeps its receipts
 
 `monarchy.records.CourtRecords` keeps task assignments, incoming reports,
 decisions, results, and external-operation receipts in one private SQLite

@@ -6,7 +6,7 @@ Neither starts a background service.
 
 Run these commands from the cloned Monarchy repository, with Python 3.9 or later.
 Replace `/path/to/private/court.db` with a path outside the checkout. For a first
-assignment, follow [Run your empire](/docs/runtime) before using this reference.
+assignment, follow [Run your fleet](/docs/runtime) before using this reference.
 
 ## Orchestration runtime
 

@@ -1,4 +1,4 @@
-# Run your empire
+# Run your fleet
 
 The Secretary has a desk now: one private SQLite journal for assignments,
 reports, decisions and delivery receipts. Each command does one job and exits.

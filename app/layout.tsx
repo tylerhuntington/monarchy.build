@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/" },
   description:
-    "Build an empire of coding agents through one conversation. Talk to the Queen while her Secretary coordinates your 00-Agents.",
+    "Build a fleet of coding agents through one conversation. Talk to the Queen while her Secretary coordinates your 00-Agents.",
   openGraph: {
     type: "website",
     siteName: "Monarchy",
     title: "Keep calm and DM the Queen.",
-    description: "One conversation. An empire of coding agents.",
+    description: "One conversation. A fleet of coding agents.",
     images: [{ url: "/og.png", width: 1254, height: 1254 }],
   },
   twitter: { card: "summary", images: ["/og.png"] },
